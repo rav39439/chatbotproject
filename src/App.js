@@ -11,6 +11,8 @@ import { Route
 
 function App() {
   const [user, setUser] = useState(null)
+  // const [history, setUserhistory] = useState([])
+  // const [message, setMessage] = useState(null)
 
   useEffect(() => {
 
@@ -29,8 +31,8 @@ function App() {
     <div className="App">
       <Navbar tasks={history} userInfo={user} />
       <Routes>
-        <Route exact path="/" element={user !== null ? <Dashboard currentUser={user} tasks={history} /> : <Login />} />
-        <Route exact path="/Login" element={<Login currentMessage={message} />} />
+        <Route exact path="/" element={user !== null ? <Dashboard currentUser={user} /> : <Login />} />
+        <Route exact path="/Login" element={<Login  />} />
         <Route exact path="/Register" element={<Register />} />
         <Route exact path="/History" element={<History />} />
 
