@@ -6,9 +6,7 @@ import axios from 'axios';
 const History = () => {
 
     const [history, setHistory] = useState([
-        { question: 'What is React?', answer: 'React is a JavaScript library for building user interfaces.' },
-        { question: 'What is JSX?', answer: 'JSX is a syntax extension for JavaScript that allows you to write HTML-like code within React components.' },
-      ]);
+            ]);
       useEffect(() => {
         let userdata = JSON.parse(localStorage.getItem('Profile'));
         console.log(userdata.user._id)
