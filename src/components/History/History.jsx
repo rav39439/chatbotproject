@@ -20,7 +20,7 @@ const History = () => {
               return;
             }
     
-            const response = await axios.get(`http://localhost:5000/getTasks`, {
+            const response = await axios.get(`https://samplechatbot.onrender.com/getTasks`, {
               params: { userid: userdata.user._id }
             });
     

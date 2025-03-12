@@ -25,7 +25,7 @@ const Register = () => {
   const onSubmit = async(data) => {
     console.log("Form Data:", data);
     try {
-      const response = await axios.post('http://localhost:5000/register', {
+      const response = await axios.post('https://samplechatbot.onrender.com/register', {
         username: data.username,
         email: data.email,    
         password: data.password,

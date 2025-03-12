@@ -57,7 +57,7 @@ const SearchBar = (props) => {
     }
 
     try {
-        const response = await axios.post('http://localhost:5000/ask', {
+        const response = await axios.post('https://samplechatbot.onrender.com/ask', {
           question:body.searchTerm,
           context:body.fileContent,
           userid:body.currentUser

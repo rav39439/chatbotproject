@@ -23,7 +23,7 @@ const Login = (props) => {
     setLoading(true)
       // dispatch(login({email:data.email,password:data.password},navigate))
       try {
-        const response = await axios.post('http://localhost:5000/login', {
+        const response = await axios.post('https://samplechatbot.onrender.com/login', {
           email:data.email,
           password:data.password,
         });
