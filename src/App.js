@@ -11,8 +11,6 @@ import { Route
 
 function App() {
   const [user, setUser] = useState(null)
-  const [history, setUserhistory] = useState([])
-  const [message, setMessage] = useState(null)
 
   useEffect(() => {
 

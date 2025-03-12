@@ -1,6 +1,5 @@
-import {React,useEffect,useState}  from "react";
+import {React,useState}  from "react";
 import Searchbar from"../../components/Searchbar/Searchbar"  
-import { Box, Typography, Card, CardContent } from '@mui/material';
 import "./Dashboard.css";
 const Dashboard = (props) => {
     const [searchData, setSearchData] = useState([]);
@@ -11,16 +10,6 @@ const Dashboard = (props) => {
       setSearchData([...searchData,data]);
     };
 
-    useEffect(() => {
-    // setQaList((prevQaList) => [
-    //     ...prevQaList,
-    //     {
-    //       question: "test",
-    //       answer: `This is the answer for:ttest`, // Example answer
-    //     },
-    //   ]);
-
-    }, [searchData]);
     return (
         
 
