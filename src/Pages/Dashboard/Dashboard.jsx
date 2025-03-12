@@ -3,7 +3,6 @@ import Searchbar from"../../components/Searchbar/Searchbar"
 import "./Dashboard.css";
 const Dashboard = (props) => {
     const [searchData, setSearchData] = useState([]);
-    const [qaList, setQaList] = useState([]);
 
     const handleSearchData = (data) => {
       console.log('Received from child:', data);
