@@ -29,7 +29,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Navbar tasks={history} userInfo={user} />
+      <Navbar  userInfo={user} />
       <Routes>
         <Route exact path="/" element={user !== null ? <Dashboard currentUser={user} /> : <Login />} />
         <Route exact path="/Login" element={<Login  />} />
