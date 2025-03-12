@@ -45,8 +45,8 @@ const SearchBar = (props) => {
   };
 
   const handleSearchClick = async() => {
-    if(fileContent==' ' && searchTerm==' '){
-      alert("Please enter a search term or upload a file")  
+    if((fileContent=='') || (searchTerm=='') || (fileContent==null)){
+      alert("Please enter a search term or upload document file in txt format")  
       return
     }
   
